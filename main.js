@@ -24,8 +24,8 @@ var logout = () => {
     const auth = getAuth()
     onAuthStateChanged(auth, (user) => {
         if (user) {
-            const uid = user.uid;
-            document.getElementById("sign-up").innerText = "logout"
+            const uid = user.email;
+            document.getElementById("sign-up").innerText = uid
             document.getElementById("sign-up1").style.display = "none"
             // ...
         } else {
