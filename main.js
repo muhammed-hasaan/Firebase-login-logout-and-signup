@@ -25,6 +25,7 @@ var logout = () => {
     onAuthStateChanged(auth, (user) => {
         if (user) {
             const uid = user.uid;
+            document.getElementById("sign-up").style.display="block"
             document.getElementById("sign-up").innerText = "logout"
             document.getElementById("sign-up1").style.display = "none"
             // ...
