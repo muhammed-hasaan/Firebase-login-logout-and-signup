@@ -28,7 +28,7 @@ buttons.addEventListener("click", () => {
             // Signed in 
             const user = userCredential.user;
             console.log(user)
-            window.location.href = "./signup.html"
+            window.location.href = "./index.html"
             // ...
         })
         .catch((error) => {
